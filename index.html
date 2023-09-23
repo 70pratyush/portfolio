@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratyush - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="wrapper relative bg-[#1C1C1C]">
+        <!-- NAV BAR -->
+        <div id="home" class="navBar fixed flex left-40 w-[100%] max-w-[1200px] mx-auto justify-between
+        backdrop-blur-md bg-[#1c1c1ca0] py-3 px-3 md:py-5 md:px-5 text-white">
+
+            <a href="#home"
+            class="flex items-center justify-center bg-yellow-500 w-8 h-8 md:w-12 md:h-12 
+            rounded-full font-semibold md:font-bold text-lg sm:text-2xl">
+                P
+            </a>
+
+            <div class="md:flex gap-7 items-center text-lg hidden">
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#project" class="nav-item">Project</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </div>
+
+            <div class="bar flex items-center md:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+
+        <!-- HERO SECTION -->
+        <div class="flex justify-between items-center h-[100vh] max-w-[1200px] mx-auto 
+        py-3 px-3 md:py-5 md:px-5 text-white overflow-hidden">
+
+            <!-- LEFT SECTION -->
+            <div class="space-y-3.5 ">
+                <h1 class="font-bold text-6xl">Hi, I'm Pratyush</h1>
+                <h2 class="font-semibold text-xl text-[#F5F5F5]">Frontend Web Developer</h2>
+                <p class="text-[#cbcaca] text-lg pb-7 w-[70%]">Beginner level experience in web design and development
+                    knowledge,
+                    producing quality work.</p>
+                <a href="#about"
+                class="btn border rounded-md bg-yellow-500 border-yellow-500 px-8 py-3 text-lg">
+                    Know more <i class="fa-regular fa-user"></i>
+                </a>
+            </div>
+
+
+            <!-- RIGHT SECTION -->
+            <img src="pictures/hero-section.png" class="w-[400px] -right-12 md:block hidden" alt="">
+        </div>
+
+
+
+        <!-- ABOUT ME -->
+
+        <div id="about" class="text-white max-w-[1200px] mx-auto mt-20 py-3 px-3 md:py-5 md:px-5 overflow-hidden">
+            <h2 class="text-center text-yellow-500 font-semibold">My Intro</h2>
+            <h3 class="text-center text-5xl font-bold">About Me</h3>
+
+
+            <div class="flex gap-32 mt-24">
+                    <!-- LEFT SECTION  -->
+                <div class="w-[45%] h-[550px] overflow-hidden relative rounded-md">
+                    <img src="pictures/about-me.jpg" class="scale-150 absolute left-10" alt="">
+                </div>
+
+                <!-- RIGHT SECTION -->
+                <div class="w-[50%]">
+
+                    <H2 class="font-bold text-2xl mb-6">Hi, I'm Pratyush Singh</H2>
+                    <p class="leading-7 text-justify text-lg font-normal text-[#CBCACA]">I am Computer Science and Engineering Student at SJB Institute of Technology , Bangalore. I am fascinated
+                        about programming and exploring new CS fields. I enjoy solving problems with use of programming. I am
+                        always energetic and eager to learn new skills. I have good leadership skills as well as I can work as a
+                        team member. I am currently looking for internship and job opportunities that matches my skills.
+                    </p>
+                    
+                    <div class="flex items-center bg-[#272732] py-4 px-5 my-14 w-fit ">
+                        <i class="fa-solid fa-list-ol text-yellow-500 text-5xl"></i>
+                        <div class="pl-6">
+                            <h4 class="font-semibold">Completed</h4>
+                            <p class="font-normal text-[#CBCACA]">5+ Project</p>
+                        </div>
+                    </div>
+                    
+                    <a href="pictures/pratyush resume.pdf" download
+                    class="btn cursor-pointer border rounded-md bg-yellow-500 border-yellow-500 px-8 py-3 text-lg">
+                        Download CV <i class="fa-solid fa-download"></i>
+                    </a>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+</body>
+
+</html>
