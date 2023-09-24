@@ -7,19 +7,18 @@
     <title>Pratyush - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="main.css">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
     <div class="wrapper relative bg-[#1C1C1C]">
         <!-- NAV BAR -->
-        <div id="home" class="navBar fixed flex left-40 w-[100%] max-w-[1200px] mx-auto justify-between
-        backdrop-blur-md bg-[#1c1c1ca0] py-3 px-3 md:py-5 md:px-5 text-white">
+        <div class="navBar flex w-[100%] max-w-[1200px] mx-auto justify-between
+        backdrop-blur-md bg-[#1c1c1ca0] py-5 px-5  text-white">
 
             <a href="#home"
-            class="flex items-center justify-center bg-yellow-500 w-8 h-8 md:w-12 md:h-12 
-            rounded-full font-semibold md:font-bold text-lg sm:text-2xl">
+            class="flex items-center justify-center bg-yellow-500 w-12 h-12 
+            rounded-full font-semibold md:font-bold text-2xl">
                 P
             </a>
 
@@ -31,15 +30,15 @@
                 <a href="#contact" class="nav-item">Contact</a>
             </div>
 
-            <div class="bar flex items-center md:hidden">
+            <div class="menuBar text-2xl pl-5 pr-3 flex items-center md:hidden">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
 
 
         <!-- HERO SECTION -->
-        <div class="flex justify-between items-center h-[100vh] max-w-[1200px] mx-auto 
-        py-3 px-3 md:py-5 md:px-5 text-white overflow-hidden">
+        <div  id="home" class="flex justify-between items-center h-[100vh] max-w-[1200px] mx-auto 
+        py-5 px-5 text-white overflow-hidden">
 
             <!-- LEFT SECTION -->
             <div class="space-y-3.5 ">
@@ -56,28 +55,27 @@
 
 
             <!-- RIGHT SECTION -->
-            <img src="pictures/hero-section.png" class="w-[400px] -right-12 md:block hidden" alt="">
+            <img src="pictures/hero-section.png" class="w-[400px] md:block hidden" alt="">
         </div>
 
 
 
         <!-- ABOUT ME -->
-
-        <div id="about" class="text-white max-w-[1200px] mx-auto mt-20 py-3 px-3 md:py-5 md:px-5 overflow-hidden">
+        <div id="about" class="text-white z-1 max-w-[1200px] mx-auto mt-20 py-3 px-3 md:py-5 md:px-5 overflow-hidden">
             <h2 class="text-center text-yellow-500 font-semibold">My Intro</h2>
             <h3 class="text-center text-5xl font-bold">About Me</h3>
 
-
-            <div class="flex gap-32 mt-24">
+            <!-- CONTENT -->
+            <div class="flex flex-col items-center md:flex-row gap-20 md:gap-32 mt-24">
                     <!-- LEFT SECTION  -->
-                <div class="w-[45%] h-[550px] overflow-hidden relative rounded-md">
+                <div class="w-[100%] px-5 md:w-[45%] h-[550px] overflow-hidden relative rounded-md">
                     <img src="pictures/about-me.jpg" class="scale-150 absolute left-10" alt="">
                 </div>
 
                 <!-- RIGHT SECTION -->
-                <div class="w-[50%]">
+                <div class="w-[100%] px-5 md:w-[50%]">
 
-                    <H2 class="font-bold text-2xl mb-6">Hi, I'm Pratyush Singh</H2>
+                    <H2 class="font-bold text-3xl md:text-2xl mb-6">Hi, I'm Pratyush Singh</H2>
                     <p class="leading-7 text-justify text-lg font-normal text-[#CBCACA]">I am Computer Science and Engineering Student at SJB Institute of Technology , Bangalore. I am fascinated
                         about programming and exploring new CS fields. I enjoy solving problems with use of programming. I am
                         always energetic and eager to learn new skills. I have good leadership skills as well as I can work as a
@@ -99,6 +97,132 @@
                 </div>
             </div>
          
+        </div>
+
+
+        <!-- SKILLS AND ABILITIES -->
+        <div id="skills" class="text-white max-w-[800px] mx-auto mt-36 py-3 px-3 md:py-5 md:px-5 overflow-hidden">
+            <h2 class="text-center text-yellow-500 font-semibold">My Skills</h2>
+            <h3 class="text-center text-5xl font-bold">Experience</h3>
+
+
+            <!-- CONTENT  -->
+            <div class="flex mt-20">
+                <!-- LEFT SECTION  -->
+                <div class="flex flex-col p-5 gap-14 w-full md:w-[50%]">
+
+                    <!-- FRONTEND  -->
+                    <div class="flex items-center justify-between">
+                        <section class="flex items-center gap-5">
+                            <div class="text-yellow-500 font-black text-2xl">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-xl">Frontend Development</h4>
+                                <p class="font-normal text-[#cbcaca]">More than 2 months</p>
+                            </div>
+                        </section>
+                        <div class=" text-yellow-500 font-black text-xl">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+
+                    <!-- BACKEND  -->
+                    <div class="flex items-center justify-between">
+                        <section class="flex items-center gap-5">
+                            <div class="text-yellow-500 font-black text-2xl">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-xl">Backend Development</h4>
+                                <p class="font-normal text-[#cbcaca]">More than a month</p>
+                            </div>
+                        </section>
+                        <div class=" text-yellow-500 font-black text-xl">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+
+                    <!-- CODING  -->
+                    <div class="flex items-center justify-between">
+                        <section class="flex items-center gap-5">
+                            <div class="text-yellow-500 font-black text-2xl">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-xl">Coding</h4>
+                                <p class="font-normal text-[#cbcaca]">More than 1.5 year</p>
+                            </div>
+                        </section>
+                        <div class=" text-yellow-500 font-black text-xl">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- RIGHT SECTION  -->
+                <div class="h-full hidden"> 
+                    <!-- FRONTEND SLILLS -->
+                    <div>
+                        <span class="flex">
+                            <p>HTML</p>
+                            <P>90%</P>
+                        </span>
+                        <span class="flex">
+                            <p>CSS</p>
+                            <P>70%</P>
+                        </span>
+                        <span class="flex">
+                            <p>TailwindCSS</p>
+                            <P>40%</P>
+                        </span>
+                        <span class="flex">
+                            <p>Javascript</p>
+                            <P>20%</P>
+                        </span>
+                    </div>
+
+                    <!-- BACKEND SKILLS  -->
+                    <div class="hidden">
+                        <span class="flex">
+                            <p>Django</p>
+                            <P>30%</P>
+                        </span>
+                        <span class="flex">
+                            <p>MySQL</p>
+                            <P>30%</P>
+                        </span>
+                        <span class="flex">
+                            <p>NodeJS</p>
+                            <P>20%</P>
+                        </span>
+                    </div>
+
+
+                    <!-- CODING SKILLS -->
+                    <div class="hidden">
+                        <span class="flex">
+                            <p>Pythin</p>
+                            <P>70%</P>
+                        </span>
+                        <span class="flex">
+                            <p>Java</p>
+                            <P>60%</P>
+                        </span>
+                        <span class="flex">
+                            <p>C/C++</p>
+                            <P>50%</P>
+                        </span>
+                        <span class="flex">
+                            <p></p>
+                            <P>20%</P>
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
